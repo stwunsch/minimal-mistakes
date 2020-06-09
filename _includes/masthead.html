@@ -5,22 +5,22 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
 
-      <nav id="site-nav" class="greedy-nav" style="background-color:#fff;">
+      <nav id="site-nav" class="greedy-nav" style="background-color:#346295;">
       {% unless logo_path == empty %}
       <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
       {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
-          <font color="#343434" size="5">
+          <font color="white" face="arial" size="5">
             {{ site.masthead_title | default: site.title }}
           </font>
-          <font color="#343434" size="3">
+          <font color="white" face="arial" size="3">
             {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
           </font>
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %}title="{{ link.description }}"{% endif %} {% if link.target %}target="{{link.target}}"{% endif %}><font color="#343434">{{ link.title }}</font></a>
+              <a href="{{ link.url | relative_url }}"{% if link.description %}title="{{ link.description }}"{% endif %} {% if link.target %}target="{{link.target}}"{% endif %}><font color="white">{{ link.title }}</font></a>
             </li>
           {%- endfor -%}
         </ul>
