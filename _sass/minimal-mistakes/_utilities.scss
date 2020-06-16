@@ -554,13 +554,8 @@ a.reversefootnote {
    ========================================================================== */
 
 .gsc-control-cse {
-  table,
-  tr,
-  td {
-    border: 0; /* remove table borders widget */
-  }
-  background-color: #fff;
-  color: #fff;
+  background-color: #fff !important;
+  color: #fff !important;
 }
 
 /*
